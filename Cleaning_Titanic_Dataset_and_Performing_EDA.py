@@ -7,6 +7,7 @@ import seaborn as sns
 train_data=pd.read_csv(r"C:\Users\ADAM\Downloads\titanic\train.csv")
 
 # Check for missing values in the dataset "train"
+print("The missign values are :")
 print(train_data.isnull().sum())
 
 # Checking the distribution of Age so we can see how to clean missing Age values
@@ -37,6 +38,7 @@ print("The missing \"Cabin\" numbers are now :",train_data['Cabin'].isnull().sum
 print("The missing \"Embarked\" letters are now :",train_data['Embarked'].isnull().sum())
 
 # Verify the dataset
+print("The missing values are now :")
 print(train_data.isnull().sum())
 
 # Save the cleaned dataset
